@@ -42,6 +42,7 @@ class Discriminator:
         z = conv2d(z, self.W4, [1, 1, 1, 1], padding="SAME")
         z = tf.nn.bias_add(z, self.b4)
         z = batch_normalization(z, momentum=momentum)
+        z = tf.nn.leaky_relu(z)
         
         z = tf.reshape(z, [-1, 7*7*256])
         logits = tf.matmul(z, self.W5)
