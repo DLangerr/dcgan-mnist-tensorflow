@@ -7,7 +7,7 @@ from ops import *
 import os
 
 class DCGAN:
-    def __init__(self, img_shape, epochs=50000, lr_gen=0.0001, lr_disc=0.0001, z_shape=100, batch_size=64, beta1=0.5, epochs_for_sample=1000):
+    def __init__(self, img_shape, epochs=50000, lr_gen=0.0001, lr_disc=0.0001, z_shape=100, batch_size=64, beta1=0.5, epochs_for_sample=500):
         
        
         self.rows, self.cols, self.channels = img_shape
