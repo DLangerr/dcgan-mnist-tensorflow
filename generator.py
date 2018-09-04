@@ -3,7 +3,7 @@ import tensorflow as tf
 import matplotlib.pyplot as plt 
 from ops import *
 from tensorflow.layers import batch_normalization
-from tensorflow.keras.layers import BatchNormalization, UpSampling2D, Dense
+from tensorflow.keras.layers import UpSampling2D
 
 class Generator:
     def __init__(self, img_shape, batch_size):
