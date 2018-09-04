@@ -12,7 +12,7 @@ class Generator:
         with tf.variable_scope('g'):
             print("Initializing generator weights")
             self.W1 = init_weights([100, 7*7*512])
-            self.W2 = init_weights([3, 3, 256, 256])
+            self.W2 = init_weights([3, 3, 512, 256])
             self.W3 = init_weights([3, 3, 256, 128])
             self.W4 = init_weights([3, 3, 128, 1])
             
